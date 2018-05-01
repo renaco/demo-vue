@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App, fol the wol"/>
-    <Directives message="This is another components"></Directives>
-    <DataBinding></DataBinding>
+    <Directives message="This is another components from home"/>
+    <DataBinding/>
   </div>
 </template>
 
 <script>
   import HelloWorld from './components/HelloWorld.vue'
   import DataBinding from './components/DataBinding.vue'
-  import Directives from './components/DataBinding.vue'
+  import Directives from './components/Directives.vue'
 
   export default {
     name: 'app',

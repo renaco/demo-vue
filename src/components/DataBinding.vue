@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>{{ message }}</h1>
-    <input type="text">
+    <h1>{{ titleMessage }}</h1>
+    <input type="text" v-model="messageReady" />
+    <p>{{ messageReady }}</p>
   </div>
 </template>
 
@@ -10,6 +11,12 @@
     name: 'DataBinding',
     props: {
       message: String
+    },
+    data: () => {
+      return {
+        messageReady: 'some things',
+        titleMessage: 'Title default'
+      }
     }
   }
 </script>
