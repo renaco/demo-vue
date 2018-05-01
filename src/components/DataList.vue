@@ -24,7 +24,7 @@ export default {
   },
   data: () => {
     return {
-        selecteded: '',
+        selecteded: 'wait...',
         items: [
           { option: 'Escoja', value: 0}, 
           { option: 'one', value: 1},
