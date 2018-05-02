@@ -2,7 +2,7 @@
   <div>
     <h4>Choose Type</h4>
     <select id="list" @change="selectItem">
-      <option v-for="item in items" v-bind:value="item.value">
+      <option v-for="item in items" v-bind:value="item.value" :key="item">
         {{ item.option }}
       </option>
     </select>
@@ -22,7 +22,7 @@ export default {
       console.log(e.target.value)
     }
   },
-  data: () => {
+  data () {
     return {
         selecteded: 'wait...',
         items: [

@@ -24,7 +24,7 @@
         console.log('click disabled', this.conected ? true: false)
       }
     },
-    data: () => {
+    data () {
       return {
         disconected: true,
         conected: false,
