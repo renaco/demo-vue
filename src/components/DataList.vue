@@ -7,9 +7,6 @@
       </option>
     </select>
     <p>{{ selecteded }}</p>
-    <!-- <pre>
-      {{ $data }}
-    </pre> -->
   </div>
 </template>
 
