@@ -16,7 +16,6 @@ export default {
   methods: {
     selectItem: function(e) {
       this.selecteded = e.target.value;
-      console.log(e.target.value)
     }
   },
   data () {

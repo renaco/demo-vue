@@ -15,13 +15,11 @@
         this.conected = true;
         this.disconected = false;
         this.dataToShow = 'Some title';
-        console.log('click', this.conected ? true: false)
       },
       hideSection: function() {
         this.conected = false;
         this.disconected = true;
         this.dataToShow = 'Hide element';
-        console.log('click disabled', this.conected ? true: false)
       }
     },
     data () {
