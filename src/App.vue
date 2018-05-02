@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App, fol the wol"/>
+    <Directives message="This is another components from home"/>
+    <DataBinding/>
+    <DataList/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import HelloWorld from './components/HelloWorld.vue'
+  import DataBinding from './components/DataBinding.vue'
+  import Directives from './components/Directives.vue'
+  import DataList from './components/DataList.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      HelloWorld,
+      DataBinding,
+      Directives,
+      DataList
+    }
   }
-}
 </script>
 
 <style>
@@ -22,7 +30,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    /* color: #2c3e50; */
     margin-top: 60px;
   }
 </style>
